@@ -8,8 +8,10 @@
   <%= f.email_field :email, class: 'form-control' %>
 
   <%= f.label :password %>
-  <%= f.password_field :password, class: 'form-control' %>
-
+  <%= f.password_field :password, class: 'form-control' , :id => 'password'%>
+  <meter id="meter1" min="0" max="100" low="25" high="75" optimum="100" value="0"></meter>
+      </br><span id="result"></span>
+      <br>
   <%= f.label :password_confirmation %>
   <%= f.password_field :password_confirmation, class: 'form-control' %>
 
